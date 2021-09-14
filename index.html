@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon_calculator.png">
+</head>
+
+<body>
+    <div">
+        <h1>Calculator By Diogo Leite</h1>
+        <br>
+        <p>Calculator was built using HTML, CSS and JavaScript!</p>
+        <div class="calculadora">
+            <h1>Calculator</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button onclick="clean()" id="botaoclean">C</button></td>
+                    <td><button onclick="back()">&lt</button></td>
+                    <td><button onclick="insert('/')">/</button></td>
+                    <td><button onclick="insert('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('7')">7</button></td>
+                    <td><button onclick="insert('8')">8</button></td>
+                    <td><button onclick="insert('9')">9</button></td>
+                    <td><button onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('4')">4</button></td>
+                    <td><button onclick="insert('5')">5</button></td>
+                    <td><button onclick="insert('6')">6</button></td>
+                    <td><button onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('1')">1</button></td>
+                    <td><button onclick="insert('2')">2</button></td>
+                    <td><button onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button id="botaoigual" onclick="calcular()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button id="botaozero" onclick="insert('0')">0</button></td>
+                    <td><button onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
